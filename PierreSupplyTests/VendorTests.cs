@@ -6,8 +6,8 @@ using System;
 namespace PierreSupply.Tests
 {
   [TestClass]
-  public class VendorTests 
-  public void Disposable()
+  public class VendorTests : IDisposable
+  public void Dispose()
   {
     Vendor.ClearAll();
   }
@@ -15,9 +15,17 @@ namespace PierreSupply.Tests
         [TestMethod]
     public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
     {
-      Vendor newVendor = new Vendor("test Vendor");
+      Vendor newVendor = new Vendor("name", "product");
       Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
 
+    [Testmethod]
+    public void GetName_ReturnName_String()
+    {
+      string name = "Suzie's Cafe";
+      Vendor = newVendor = new Vendor(name, "proiduct");
+      string result = newVendor.Name;
+      Assert.AreEqual(name, resul);
+    }
   }
 }
