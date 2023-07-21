@@ -4,17 +4,16 @@
 
 @using PierreSupply.Models;
 
-<h1> Vendors Directory </h1>
+<h3> All orders associated with this Vendor:</h3>
 <br>
-@if (@Model.Count == 0)
-{
-  <h3> No Vendors have been added yet!</h3>
-}
+<ol>
+  @foreach (Order order in @Model["orders"])
+  {
+    <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Title</a></li>
+  }
+</ol>
 
-@foreach (Vendor vendor in Model)
-{
-  <h3><a href="/vendor/@vendor.Id">@vendor.Name</a></h3>
-}
 <br>
+<p><a href='/vendors/@Model["vendor"].Id/orders/new'> Will you like to add another Order to this Vendor?</a></p>
+<p><a href="/vendors">Back to Vendor Directory</a></p>
 <p><a href="/">Back to Home Page</a></p>
-<p><a href="/vendors/new">Do you like to add another Vendor?</a></p>

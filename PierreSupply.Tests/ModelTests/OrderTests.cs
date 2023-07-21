@@ -6,18 +6,19 @@ using System;
 namespace PierreSupply.Tests
 {
   [TestClass]
-  public class OrderTests 
-  public void Disposable()
+  public class OrderTests: IDisposable
   {
-    Order.ClearAll();
-  }
-  {
+    public void Dispose()
+    {
+      Order.ClearAll();
+    }
+  
         [TestMethod]
     public void OrderConstructor_CreatesInstanceOfOrder_Order()
     {
-      Order newOrder = new Order("test Order");
+      Order newOrder = new Order("bread", "flour");
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
-
   }
+  
 }
