@@ -2,23 +2,36 @@
 gti 
 By Hernan Verar
 
-Technologies Used:
+## Technologies Used:
 
-C#
-.NET 6.0
-Description:
-Simple webpage using MVC to create a suply company
+* C#
+* .NET 6.0
+* Css
+* MsTest
 
-Setup/Installation Req's:
+
+## Description:
+Simple webpage using MVC to create a supply App for Users to Track and create Clients
+
+## Setup/Installation Req's:
 To launch the application enter the following lines into the command line:
 
-git clone https://github.com/hernanverar/PierreSuply.Solutions.git
-dotnet restore
-dotnet watch run
-Known Bugs:
+> git clone https://github.com/hernanverar/PierreSuply.Solutions.git
+
+* In the terminal, navigate to the console application with the command:
+
+> cd PierreSupply.Solution/PierreSupply
+
+* To launch the application enter the following lines into the command line:
+
+> dotnet restore
+> dotnet watch run
+> dotnet test
+
+## Known Bugs:
 Any known bugs here
 
-License:
+## License:
 License; MIT License
 
 Copyright (c) [2023] [Hernan Verar]
