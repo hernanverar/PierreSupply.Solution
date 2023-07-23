@@ -55,5 +55,20 @@ namespace PierreSupply.Tests
       //Assert
       CollectionAssert.AreEqual(newList, result);
     }
+    [TestMethod]
+    public void AddOrder_AssociatesOrderWithVendor_OrderList()
+    {
+      //Arrange
+      string title = "Order 1";
+      Order newOrder = new Order(title, "test description", 1, "test date");
+      List<Order> newList = new List<Order> { newOrder };
+      string name = "Vendor 1";
+      Vendor newVendor = new Vendor(name, "test description");
+      newVendor.AddOrder(newOrder);
+      //Act
+      List<Order> result = newVendor.Orders;
+      //Assert
+      CollectionAssert.AreEqual(newList, result);
+    }
   }
 }

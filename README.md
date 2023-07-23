@@ -1,5 +1,4 @@
-# PierreSupply.Solutions
-gti 
+# PierreSupply.Solutions 
 By Hernan Verar
 
 ## Technologies Used:

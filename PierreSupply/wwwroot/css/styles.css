@@ -1,0 +1,41 @@
+body {
+  background-color: rgb(239, 198, 241);
+  min-width: 55%;
+  max-width: 850px;
+  margin: 5% 10% 10% 20%;
+  align-content: center;
+}
+
+div {
+  max-width: 850px;
+  padding: 2% 5% 2% 5%;
+  margin: 10px;
+  background-color: rgb(105, 119, 96);
+  text-align: center;
+  font-family:'Courier New', Courier, monospace;
+  align-content: center;
+}
+
+form {
+  align-content: center;
+}
+
+input{
+  align-items: right;
+}
+p, h1 {
+  width: 90%;
+  padding: 2% 2% 2% 2%;
+  margin: 5% 5% 5% 5%;
+  align-content: center;
+}
+a {
+  text-decoration: none;
+  color: rgb(6, 79, 101);
+  font-size: large;
+  font-style: italic;
+  font-variant: small-caps;
+  border: 1px solid black ;
+  margin: 2px;
+  padding: 2px;
+}
