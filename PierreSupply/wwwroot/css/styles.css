@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(239, 198, 241);
+  background-color: rgb(221, 166, 224);
   min-width: 55%;
   max-width: 850px;
   margin: 5% 10% 10% 20%;
@@ -10,7 +10,7 @@ div {
   max-width: 850px;
   padding: 2% 5% 2% 5%;
   margin: 10px;
-  background-color: rgb(105, 119, 96);
+  background-color: rgb(189, 216, 172);
   text-align: center;
   font-family:'Courier New', Courier, monospace;
   align-content: center;
@@ -31,7 +31,7 @@ p, h1 {
 }
 a {
   text-decoration: none;
-  color: rgb(6, 79, 101);
+  color: rgb(139, 194, 210);
   font-size: large;
   font-style: italic;
   font-variant: small-caps;
