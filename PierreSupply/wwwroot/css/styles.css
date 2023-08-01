@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(221, 166, 224);
+  background-color: rgb(118, 112, 111);
   min-width: 55%;
   max-width: 850px;
   margin: 5% 10% 10% 20%;
@@ -30,12 +30,18 @@ p, h1 {
   align-content: center;
 }
 a {
+  background-color: rgb(167, 244, 226);
   text-decoration: none;
-  color: rgb(139, 194, 210);
+  color: rgb(37, 87, 102);
   font-size: large;
   font-style: italic;
   font-variant: small-caps;
-  border: 1px solid black ;
+  border: 2px solid black ;
   margin: 2px;
   padding: 2px;
+}
+
+h1, h3 {
+  text-decoration: none;
+  color: rgb(161, 63, 172);
 }
